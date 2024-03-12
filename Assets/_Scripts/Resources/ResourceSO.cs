@@ -36,7 +36,14 @@ public class ResourceSO : ScriptableObject
     {
         Amount += amount;
     }
-
+    /// <summary>
+    /// устанавливает значение количества ресурса
+    /// </summary>
+    /// <param name="amount">Количество для установления значения количества ресурса.</param>
+    public void SetValue(int amount)
+    {
+        Amount = amount;
+    }
     /// <summary>
     /// Название ресурса.
     /// </summary>
