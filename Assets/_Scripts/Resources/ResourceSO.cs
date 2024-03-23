@@ -10,6 +10,22 @@ public class ResourceSO : ScriptableObject
     [SerializeField] private string _name;
     [SerializeField]   private int _amount;
 
+
+    /* 
+     1 секунда 1 серебро
+    2 секунды 1 золото
+     */
+    [SerializeField] private float _TimeDelay=1;
+
+    public float TimeDelay
+    {
+        get { return _TimeDelay; }
+        private set
+        {
+            _TimeDelay = value;
+        
+        }
+    }
     /// <summary>
     /// Количество ресурса.
     /// </summary>
@@ -44,6 +60,8 @@ public class ResourceSO : ScriptableObject
     {
         Amount = amount;
     }
+
+    
     /// <summary>
     /// Название ресурса.
     /// </summary>

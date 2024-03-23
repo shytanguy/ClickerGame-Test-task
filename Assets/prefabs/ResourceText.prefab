@@ -147,5 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1dc560c952bc1b4db74a7a3e6801fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _textField: {fileID: 6451248303924620500}
   _initialText: "\u0417\u043E\u043B\u043E\u0442\u043E"
   _resourceToCount: {fileID: 11400000, guid: c3451e5754624ab45bdf9c3de9d821bf, type: 2}

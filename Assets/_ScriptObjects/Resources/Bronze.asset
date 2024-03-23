@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 748ac55df6b8a5741b6fe875ed5a9c24, type: 3}
-  m_Name: Gold
+  m_Name: Bronze
   m_EditorClassIdentifier: 
-  _name: "\u0417\u043E\u043B\u043E\u0442\u043E"
-  _amount: 131
-  _TimeDelay: 3
+  _name: "\u0411\u0440\u043E\u043D\u0437\u0430"
+  _amount: 0

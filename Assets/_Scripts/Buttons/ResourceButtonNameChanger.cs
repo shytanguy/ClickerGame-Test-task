@@ -8,9 +8,25 @@ using UnityEngine;
 public class ResourceButtonNameChanger : MonoBehaviour
 {
     [SerializeField] private ResourceSO _resource;
-    private TextMeshProUGUI _buttonNameText;
+    [SerializeField]  private TextMeshProUGUI _buttonNameText;
 
     private void Awake()
+    {
+        if (_buttonNameText==null)
+        GetButtonText();
+    }
+
+    public void SetResource(ResourceSO resource)
+    {
+        _resource = resource;
+        if (_buttonNameText == null)
+        {
+            GetButtonText();
+        }
+        _buttonNameText.text = _resource.Name;
+    }
+
+    private void GetButtonText()
     {
         try
         {

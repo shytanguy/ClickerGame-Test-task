@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 /// <summary>
 /// Класс для отображения количества определенного ресурса.
@@ -14,6 +15,21 @@ public class ResourceCounterScript : TextFieldCounter
         // Обновляем текстовое значение счетчика ресурса
         ChangeTextValue(value);
     }
+    public void SetResource(ResourceSO resource)
+    {
+        _resourceToCount.ValueChanged -= SetNewValue;
+
+        _resourceToCount = resource;
+
+        _initialText = resource.Name;
+        
+
+        ChangeTextValue(_resourceToCount.Amount);
+
+        _resourceToCount.ValueChanged += SetNewValue;
+
+    }
+
 
     private void OnEnable()
     {

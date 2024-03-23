@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Silver
   m_EditorClassIdentifier: 
   _name: "\u0421\u0435\u0440\u0435\u0431\u0440\u043E"
-  _amount: 5
+  _amount: 96
+  _TimeDelay: 2

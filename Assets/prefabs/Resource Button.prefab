@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3185657253203246531}
   - component: {fileID: 7736341731631441041}
   - component: {fileID: 7425103945260105973}
+  - component: {fileID: 4714692237827958964}
   m_Layer: 5
   m_Name: Resource Button
   m_TagString: Untagged
@@ -151,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _resource: {fileID: 11400000, guid: c3451e5754624ab45bdf9c3de9d821bf, type: 2}
+  _buttonNameText: {fileID: 6609548270502548383}
 --- !u!114 &7425103945260105973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +166,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _resourceToSave: {fileID: 11400000, guid: c3451e5754624ab45bdf9c3de9d821bf, type: 2}
+--- !u!114 &4714692237827958964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975161137681566337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36cceaa953350a43ad55059c6976bc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _resource: {fileID: 11400000, guid: c3451e5754624ab45bdf9c3de9d821bf, type: 2}
+  _valueToAdd: 1
 --- !u!1 &5063253342659749603
 GameObject:
   m_ObjectHideFlags: 0

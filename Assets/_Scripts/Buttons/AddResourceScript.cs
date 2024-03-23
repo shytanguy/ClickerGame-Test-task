@@ -28,4 +28,9 @@ public class AddResourceScript : MonoBehaviour
         // Увеличиваем значение ресурса на указанное количество
         _resource.AddValue(_addOnClick);
     }
+
+    public void SetResource(ResourceSO resource)
+    {
+        _resource = resource;
+    }
 }

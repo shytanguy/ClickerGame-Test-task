@@ -23,7 +23,17 @@ public class SavingResourcesData : MonoBehaviour
     {
         _resourceToSave.ValueChanged -= SaveOnAmountChanged;
     }
+    public void SetResource(ResourceSO resource)
+    {
 
+        _resourceToSave.ValueChanged -= SaveOnAmountChanged;
+
+        _resourceToSave = resource;
+
+        _resourceToSave.ValueChanged += SaveOnAmountChanged;
+
+        _resourceToSave.SetValue(PlayerPrefs.GetInt(_resourceToSave.Name, 0));
+    }
     /// <summary>
     /// ћетод, сохран€ющий количество ресурса
     /// </summary>

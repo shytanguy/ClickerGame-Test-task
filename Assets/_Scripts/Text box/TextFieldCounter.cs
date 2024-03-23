@@ -13,12 +13,12 @@ public abstract class TextFieldCounter : MonoBehaviour
     /// <summary>
     /// Ссылка на текстовое поле.
     /// </summary>
-    protected TextMeshProUGUI _textField;
+   [SerializeField] protected TextMeshProUGUI _textField;
 
     /// <summary>
     /// Начальный текст для текстового поля.
     /// </summary>
-    [SerializeField] private string _initialText;
+    [SerializeField] protected string _initialText;
 
 
     private void Awake()
